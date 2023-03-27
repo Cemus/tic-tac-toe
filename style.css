@@ -1,0 +1,128 @@
+:root{
+    --darker: #6C5143;
+    --dark: #B65745;
+    --medium: #A6635C;
+    --light: #D8634F;
+    --lighter: #E98052;
+}
+
+body{
+    background: linear-gradient(rgb(6, 40, 56), rgb(1, 21, 39));
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    min-height: 100vh;
+}
+
+header{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.titre{
+    background-color: rgb(6, 75, 87);
+    padding: 0.5em;
+    width: 30vw;
+    text-align: center;
+    border-radius: 1.75rem;
+    box-shadow: 0px 6px 16px black;
+}
+
+.again-container{
+    visibility: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center; 
+    bottom: 5vh;   
+}
+
+#again{
+    border: none;
+    border-radius: 1rem;
+    width: 10vw;
+    height: 5vh;
+    background-color: rgb(19, 94, 117);
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+    transition: all .1s ease-in-out;
+}
+
+#again:hover{
+    border: solid rgb(255, 255, 255);
+    cursor: pointer;
+    font-weight: bolder;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    margin: 10vh;
+}
+
+.gameboard{
+    display: grid;
+    height: max-content;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    gap: 42px;
+    width: fit-content;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin-top: 0.5rem;
+}
+
+.gameboard > button{
+    background-color: rgb(241, 241, 241);
+    border-style: none;
+    height: 10vh;
+    width: 10vh;
+    border: solid rgb(219, 161, 0);
+    border-radius: 0.75rem;
+    box-shadow: 6px 6px 16px black;
+    transition: all .5s;
+    background-repeat: no-repeat;
+    background-position:center center;
+    background-size: contain;
+}
+
+.gameboard > button:hover{
+    cursor: pointer;
+    height: 11vh;
+    width: 11vh;
+}
+
+#text{
+    color: white;
+    text-align: center;
+    align-self: first baseline;
+    justify-self: center;
+    font-size: 2rem;
+    width: 20vw;
+}
+
+
+
+.score-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgb(6, 75, 87);
+    color: white;
+    border-radius: 1rem;
+    width: 10vw;
+    height: 8vh;
+    text-align: center;
+    box-shadow: 0px 6px 16px black;
+    padding: 0.5rem;
+}
+
